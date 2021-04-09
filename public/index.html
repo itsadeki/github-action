@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker</title>
+    <script src="./assets/js/main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Docker</h2>
+          <iframe
+            src="https://giphy.com/embed/YSTLV9MkR248Qvxjz3"
+            width="480"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a
+              href="https://giphy.com/gifs/whale-marine-life-pikaole-YSTLV9MkR248Qvxjz3"
+              >via GIPHY</a
+            >
+          </p>
+        </section>
+        <section>
+          <p>
+            Docker est un ensemble combiné de produits Saas (Software as a
+            service) et Paas (Platform as a service) utilisant la virtualisation
+            au niveau du système d'exploitation pour développer et fournir des
+            logiciels dans des paquets appelés conteneurs.
+          </p>
+        </section>
+        <section>
+          <iframe
+            src="https://giphy.com/embed/2sddCIZRYfiPlNeLZn"
+            width="480"
+            height="377"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a href="https://giphy.com/gifs/reaction-mood-2sddCIZRYfiPlNeLZn"
+              >via GIPHY</a
+            >
+          </p>
+        </section>
+        <section>
+          <iframe
+            src="https://giphy.com/embed/J4aQh8ld21hBe"
+            width="480"
+            height="270"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p><a href="https://giphy.com/gifs/J4aQh8ld21hBe">via GIPHY</a></p>
+        </section>
+        <section>
+          <h2>Le Système d'Exploitation</h2>
+          <iframe
+            src="https://giphy.com/embed/tel4DU3dCiDdVUPhIg"
+            width="480"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a
+              href="https://giphy.com/gifs/blockfi-vintage-future-futuristic-tel4DU3dCiDdVUPhIg"
+              >via GIPHY</a
+            >
+          </p>
+        </section>
+        <section>
+          <p>
+            En informatique, un système d'exploitation (souvent appelé OS — de
+            l'anglais Operating System) est un ensemble de programmes qui dirige
+            l'utilisation des ressources d'un ordinateur par des logiciels
+            applicatifs.
+          </p>
+        </section>
+        <section>
+          <img
+            src="./assets/img/1-fnx-nsi-c05-img01.png"
+            alt="Système d'Exploitation"
+          />
+        </section>
+        <section>
+          <img src="./assets/img/and-159.png" alt="Système d' Android" />
+        </section>
+        <section>
+          <h2>La Virtualisation</h2>
+          <iframe
+            src="https://giphy.com/embed/sk6yL9EGVeAcE"
+            width="480"
+            height="197"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a href="https://giphy.com/gifs/matrix-cinematography-sk6yL9EGVeAcE"
+              >via GIPHY</a
+            >
+          </p>
+        </section>
+        <section>
+          <p>
+            La virtualisation est une technologie permettant de créer et
+            d’exécuter une ou plusieurs représentations virtuelles d’un
+            ordinateur ou de ses différentes ressources sur une même machine
+            physique.
+          </p>
+        </section>
+        <section>
+          <img src="./assets/img/l-hyperviseur.png" alt="hyperviseur" />
+        </section>
+        <section>
+          <p>
+            Ainsi ces machines virtuelles nommées aussi VM (Virtual Machine)
+            bénéficieront de ressources matérielles selon leurs besoins (par
+            exemple plus de puissance processeur et plus de mémoire vive mais
+            avec moins d’espace disque).
+          </p>
+        </section>
+        <section>
+          <p>
+            L'avantage c'est qu'il est possible de modifier les ressources
+            physiques de ces VMs en quelques clics. De plus elles possèdent leur
+            propre système d’exploitation ainsi que leurs propres applications.
+          </p>
+        </section>
+        <section>
+          <img src="./assets/img/virtualisation.jpg" alt="vm" />
+        </section>
+        <section>
+          <p>
+            L’hyperviseur permet d’émuler intégralement les différentes
+            ressources matérielles d'un serveur physique (tels que l'unité
+            centrale, le CPU, la RAM, le disque dur, carte réseau etc ...), et
+            permet à des machines virtuelles de les partager.
+          </p>
+        </section>
+        <section>
+          <p>
+            Consacrer les ressources adaptées selon les applications qu'on
+            souhaite mettre en place. Les machines virtuelles reste simples à
+            manier. Il est possible par exemple de basculer une VM d'un lieu à
+            l'autre voir même de sauvegarder et de dupliquer une VM à volonté
+            sans aucun impact visible pour les utilisateurs.
+          </p>
+        </section>
+        <section>
+          <p>
+            Les machines virtuelles apportent également une aisance à
+            l'administration car un matériel virtuel n'est pas sujet aux
+            défaillances. Les administrateurs profitent des environnements
+            virtuels pour faciliter les sauvegardes, la reprise après
+            catastrophe.
+          </p>
+        </section>
+        <section>
+          <p>
+            En résumé la virtualisation consiste à faire fonctionner sur un seul
+            ordinateur physique plusieurs VMs avec différents systèmes
+            d'exploitation, comme s'ils fonctionnaient sur des ordinateurs
+            distincts.
+          </p>
+        </section>
+        <section>
+          <p>
+            Mais malheureusement cette couche d'OS consomme à elle toute seule
+            énormément de ressources alors qu’au final, ce qui nous intéresse
+            c’est la ou les applications qui vont tourner dessus.
+          </p>
+        </section>
+        <section>
+          <h2>La Conteneurisation</h2>
+          <iframe
+            src="https://giphy.com/embed/eePSFNBFv2W9owZ4Sh"
+            width="322"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a href="https://giphy.com/gifs/eePSFNBFv2W9owZ4Sh">via GIPHY</a>
+          </p>
+        </section>
+        <section>
+          <img src="./assets/img/and-159.png" alt="Système d' Android" />
+        </section>
+        <section>
+          <img src="./assets/img/conteneurisation.jpg" alt="conteneurisation" />
+        </section>
+        <section>
+          <img src="./assets/img/docker-1024x439.png" alt="docker" />
+        </section>
+        <section>
+          <h3>Avantages</h3>
+          <ul>
+            <li>
+              <p>
+                Flexible: même les applications les plus complexes peuvent être
+                conteneurisées.
+              </p>
+            </li>
+            <li>
+              <p>
+                Léger: les conteneurs exploitent et partagent le noyau hôte.
+              </p>
+            </li>
+            <li>
+              <p>
+                Portable: vous pouvez créer localement, déployer sur le cloud et
+                exécuter n'importe où votre application.
+              </p>
+            </li>
+            <li>
+              <p>
+                Empilable: Vous pouvez empiler des services verticalement et à
+                la volée.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Open Source & Money</h2>
+          <iframe
+            src="https://giphy.com/embed/wxZVenBE9msRq"
+            width="480"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a
+              href="https://giphy.com/gifs/trolli-unicorn-trollimojis-turbo-wxZVenBE9msRq"
+              >via GIPHY</a
+            >
+          </p>
+        </section>
+        <section>
+          <p>
+            Docker est développé par Solomon Hykes pour un projet interne de
+            dotCloud (2008), une entreprise française proposant une plate-forme
+            en tant que service, avec les contributions d'Andrea Luzzardi et
+            Francois-Xavier Bourlet, également employés de dotCloud.
+          </p>
+          <p>
+            Docker est une évolution basée sur les technologies propriétaires de
+            dotCloud, elles-mêmes construites sur des projets open source.
+          </p>
+        </section>
+        <section>
+          <p>
+            Docker est distribué en tant que projet open source à partir de
+            2013. Après une levée de fonds de 95 millions de dollars en avril
+            2015, Docker est évalué à plus d'un milliard de dollars, ce qui en
+            fait ce qu'on appelle une "unicorn company".
+          </p>
+        </section>
+        <section>
+          <p>
+            Il s'agit actuellement du moteur de conteneurisation le plus
+            utilisé. Un grand avantage de Docker est la possibilité de modéliser
+            chaque conteneur sous la forme d'une image que l'on peut stocker
+            localement ou sur le Docker Hub, endroit public où de nombreuses
+            images sont publiées et mises à jour régulièrement.
+          </p>
+        </section>
+        <section>
+          <h2>Un peu de technique</h2>
+          <iframe
+            src="https://giphy.com/embed/2DAobRVAjTsk"
+            width="480"
+            height="360"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a href="https://giphy.com/gifs/highlight-judo-2DAobRVAjTsk"
+              >via GIPHY</a
+            >
+          </p>
+        </section>
+        <section>
+          <h3>Les conteneurs docker</h3>
+          <p>Ils peuvent être de deux forme:</p>
+          <ul>
+            <li>fichier (Image)</li>
+            <li>Entité virtuelle (Container)</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Image</h3>
+          <p>
+            On peut télécharger et stocker ces Images depuis un hub (
+            <a href="https://hub.docker.com/" target="_blank">dockerHub</a> ).
+          </p>
+          <p>
+            On peut créer de nouvelles images à partir d'Images fourni par la
+            communauté et d'un Dockerfile et les publiés à notre tour.
+          </p>
+        </section>
+        <section>
+          <h3>Container</h3>
+          <p>
+            On peut construire un Container à partir d'une Image en utilisant le
+            docker CLI ou un fichier docker-compose.yml
+          </p>
+        </section>
+        <section>
+          <h3>A vous de Jouer</h3>
+          <p>Requirement:</p>
+          <ul>
+            <li>Un compte Google</li>
+            <li>Un compte Github</li>
+            <li>Un peu de connaissance en Shell</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Etape 1 Google Shell</h3>
+          <ul>
+            <li>
+              Aller sur le moteur de recherche de google et chercher Google
+              Console
+            </li>
+            <li>Appuyer sur le bouton d'activation du Cloud Shell</li>
+            <li>(facultatif) ouvrer le Shell dans un nouvel onglet</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Etape 2 Github</h3>
+          <p>Aller sur ce repository <a href="https://github.com/itsadeki/docker-vt.git">github</a></p>
+          <p>git clone [repository]</p>
+          <p>cd [repository]</p>
+        </section>
+        <section>
+          <h3>Etape 3 Docker</h3>
+          <p>nano Dockerfile</p>
+          <p>
+            <ul>
+              <li>FROM node:alpine</li>
+              <li>WORKDIR /app</li>
+              <li>COPY . . RUN</li>
+              <li>npm install RUN npm</li>
+              <li>run build</li>
+              <li>EXPOSE 5000</li>
+              <li>CMD ["npm", "start"]</li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <p>docker build .</p>
+          <p>docker run -itp 127.0.0.1:8080:5000/tcp [image]</p>
+        </section>
+        <section>
+          <h3>Etape 4 Docker Compose</h3>
+          <p>nano docker-compose.yml</p>
+          <p>version: "3.9"</p>
+          <p>services:</p>
+          <p>  web:</p>
+          <p>    build: .</p>
+          <p>    ports:</p>
+          <p>      - "8080:5000"</p>
+        </section>
+        <section>
+          <h2>En résumé</h2>
+          <p>
+            Docker est un ensemble combiné de produits Saas (Software as a
+            service) et Paas (Platform as a service) utilisant la virtualisation
+            au niveau du système d'exploitation pour développer et fournir des
+            logiciels dans des paquets appelés conteneurs.
+          </p>
+        </section>
+        <section>
+          <iframe
+            src="https://giphy.com/embed/Ely3cY20BUEu8rWtDH"
+            width="480"
+            height="480"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+          <p>
+            <a href="https://giphy.com/gifs/end-the-mayajett-Ely3cY20BUEu8rWtDH"
+              >via GIPHY</a
+            >
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
